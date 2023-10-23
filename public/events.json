@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "picture": "https://i.ibb.co/RvHb9SX/wedding-img.jpg",
+        "title": "Wedding Ceremony Arrangement",
+        "details": "The wedding ceremony is set in a lush garden with white and gold accents. Guests are welcomed at a sign-in table with a floral centerpiece. Rows of white chairs face a wooden arch draped with ivy and white roses. To the left, a string quartet plays soft melodies. As the ceremony begins, flower girls scatter petals, setting the path for the bride. The officiant, under the arch, conducts a heartfelt service. To the right, a table displays a unity candle, awaiting the couple's symbolic union.Set amidst the enchanting Garden Courtyard, our wedding on June 10th, 2023, at 5:00 PM promises classic elegance. Envision soft fairy lights interwoven with white roses, illuminating the venue's natural beauty.",
+        "cost": 2000
+    },
+    {
+        "id": 2,
+        "picture": "https://i.ibb.co/9r3DRjG/birthday-part-img.jpg",
+        "title": "Birthday Parties Event",
+        "details": "Experience the ultimate birthday extravaganza at Starlit Events! On November 5th, 2023, we're transforming Luna Rooftop Lounge into a dreamy party haven from 7:00 PM to midnight. Dive into a realm where vintage charm meets modern luxe, complete with rose gold touches and ambient Edison lighting. Our custom tables, set with wildflowers and premium gold cutlery, guarantee Instagram-worthy moments. As the night crescendos, witness a mesmerizing firework spectacle. Book by October 25th and unlock an early bird discount! Elevate your birthdays with Starlit Events.",
+        "cost": 1000
+    },
+    {
+        "id": 3,
+        "picture": "https://i.ibb.co/y04LspV/anniversary-img.jpg",
+        "title": "Anniversaries Event Arrangement",
+        "details": "Discover romance redefined at Celestial Celebrations! This November 5th, mark your milestone moments at our exclusive event at the serene Azure Waterside Retreat from 6:00 PM to 10:00 PM. Relive timeless love in a setting adorned with silken drapes, twinkling fairy lights, and a palette of soft pastels. Our bespoke tables are a love story in themselves, set against the backdrop of a cascading water feature and serenaded by live violin melodies. Indulge in a gastronomic journey with our five-course aphrodisiac-infused menu, concluding with a decadent golden chocolate dessert. As the sun sets, share a dance under a sky lantern release, painting the horizon with your love. Reserve by October 20th to avail of our 'Forever in Love' package discount. Celebrate love, celebrate you with Celestial Celebrations.",
+        "cost": 1200
+    },
+    {
+        "id": 4,
+        "picture": "https://i.ibb.co/CV5Rf0M/engagement-party.jpg",
+        "title": "Engagement Parties Event",
+        "details": "Elevate your engagement soirée with Enchanted Beginnings! This November 5th, step into the lavish Elysian Ballroom from 7:00 PM to 11:00 PM for a night that promises opulence and memories. Immerse in an ambiance echoing love's golden hour: a mesmerizing blend of crimson sunsets and twinkling stars, mirrored in our décor. Our meticulously curated tables boast crystal centerpieces, soft ivory linens, and bouquets bursting with peonies and roses. Dance beneath our constellation of chandeliers, to the harmonious blend of classic waltz and modern love anthems. Relish a gourmet feast that celebrates your union, culminating in a sparkling champagne toast. Secure your spot by October 25th to receive our 'Golden Moments' package upgrade. Begin forever in style with Enchanted Beginnings.",
+        "cost": 1500
+    },
+    {
+        "id": 5,
+        "picture": "https://i.ibb.co/jWJSqjM/retirement-party-62558274-1.webp",
+        "title": "Retirement Parties Event",
+        "details": "Celebrate a lifetime of achievements with Horizon Farewells! This November 5th, honor the journey at the panoramic Vista Skydeck from 5:00 PM to 9:00 PM. Embrace a setting that embodies the golden age: vintage accents, photo walls memories, and gentle jazz melodies wafting through the air. Our tables are designed to spark conversations, adorned with fragrant blossoms. Wander to our gourmet station, offering delicacies that transcend time, from retro classics to modern fusion. And as the evening shades into twilight, raise a glass of our signature vintage wine in tribute. Confirm your attendance by October 26th for a complimentary 'Memories Montage' service. With Horizon Farewells, make the culmination as memorable as the journey.",
+        "cost": 800
+    },
+    {
+        "id": 6,
+        "picture": "https://i.ibb.co/4RKvLhV/baby-showerg.webp",
+        "title": "Baby shower Event",
+        "details": "Step into a world of wonder with Lullaby Luxe's Baby Showers! On November 5th, we're transforming the Blossom Boutique Lounge from 2:00 PM to 6:00 PM into a pastel paradise. Dive into a dreamscape draped in soft blues, pinks, and golds, with whimsical mobiles casting playful shadows. Each table, adorned with delicate baby's breath and twinkling candle votives, offers a snapshot of enchantment. Relish a buffet sprinkled with nostalgic treats and modern health-conscious options to satiate every craving. And for memories, our customized 'Baby Steps' photo booth captures the magic. Don't miss our premium gift corner, featuring handpicked items for the upcoming arrival. Secure your seat by October 28th and receive a bespoke 'Baby Moments' keepsake. Celebrate new beginnings with Lullaby Luxe.",
+        "cost": 1000
+    }
+]
