@@ -1,10 +1,11 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthProvider } from "../../Provider/AuthContext";
+import GoogleLogin from "./GoogleLogin";
 
 const Login = () => {
 
-    const {userlogin} = useContext(AuthProvider)
+    const { userlogin } = useContext(AuthProvider)
 
     const hendelLogin = (e) => {
         e.preventDefault()
@@ -12,21 +13,23 @@ const Login = () => {
         const form = new FormData(e.target)
         const email = form.get("email")
         const password = form.get("password")
-        console.log(email,password);
+        console.log(email, password);
+
+        // if()
 
 
-        userlogin(email,password)
-        .then(res => {
-            console.log(res.user)
-        })
-        .catch(err => console.error(err))
+        userlogin(email, password)
+            .then(res => {
+                console.log(res.user)
+            })
+            .catch(err => console.error(err.messages))
     }
     return (
         <div>
             {/* <Navbar></Navbar> */}
             <div className="">
                 <div className=" bg-base-200">
-                    <div className="hero-content flex-col lg:flex-row-reverse">
+                    <div className="hero-content flex-col lg:flex-row-reverse mx-auto">
                         <div className="card flex-shrink-0 w-6/12 bg-base-100">
                             <div className=" lg:text-left py-10 mx-8 border-b">
                                 <h1 className="text-center text-4xl font-bold">Login your account</h1>
@@ -47,8 +50,9 @@ const Login = () => {
                                 <div className="form-control mt-6">
                                     <button className="btn btn-primary">Login</button>
                                 </div>
+                                <GoogleLogin></GoogleLogin>
                                 <div className="text-center pt-4">
-                                <p>Do not Have An Account ? <Link to="/register" className="text-red-600 font-bold">Register</Link></p>
+                                    <p>Do not Have An Account ? <Link to="/register" className="text-red-600 font-bold">Register</Link></p>
                                 </div>
                             </form>
                         </div>

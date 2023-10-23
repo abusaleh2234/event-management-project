@@ -1,10 +1,13 @@
-import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signOut } from "firebase/auth";
+import { GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import { auth } from "../firebase/firebase.config";
+import toast from "react-hot-toast";
 
 
 export const AuthProvider = createContext(null)
 const AuthContext = ({children}) => {
+
+    const googleProvider = new GoogleAuthProvider();
 
     const [User, setUser] = useState()
     const [looding,setLooding] = useState(true)
@@ -18,6 +21,7 @@ const AuthContext = ({children}) => {
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
             setUser(user)
+            toast.success('Your Login Successfully!')
             setLooding(false)
           });
         return () => {
@@ -27,11 +31,19 @@ const AuthContext = ({children}) => {
 
     // login
     const userlogin = (email, password) => {
+        setLooding(true)
         return signInWithEmailAndPassword(auth, email, password)
+    }
+
+    // login with google
+    const googleLogin = () => {
+        return signInWithPopup(auth, googleProvider)
+
     }
 
     // Logout
     const logout = () => {
+        setLooding(true)
         return signOut(auth)
 
     }
@@ -43,6 +55,7 @@ const AuthContext = ({children}) => {
         creatUser,
         userlogin,
         logout,
+        googleLogin,
         looding,
         User,
     }

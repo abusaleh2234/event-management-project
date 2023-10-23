@@ -8,7 +8,7 @@ import Footer from "../../component/Footer/Footer";
 const Home = () => {
 
     const events = useLoaderData()
-    console.log(events);
+    // console.log(events);
     return (
         <div>
             <Banner></Banner>
