@@ -6,7 +6,7 @@ const LastedEvent = () => {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="">
-                <img src={couple} alt="" />
+                <img className="rounded-tl-xl rounded-tr-3xl rounded-br-lg rounded-bl-3xl" src={couple} alt="" />
             </div>
             <div className="">
                 <div className="space-y-8 p-8 ">
