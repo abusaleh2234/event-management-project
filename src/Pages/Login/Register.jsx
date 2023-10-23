@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthProvider } from "../../Provider/AuthContext";
 import GoogleLogin from "./GoogleLogin";
+import toast from "react-hot-toast";
 
 
 const Register = () => {
@@ -43,6 +44,7 @@ const Register = () => {
         creatUser(email,password)
         .then(res => {
             console.log(res.user)
+            toast.success('Your Login Successfully!')
         })
         .catch(err => console.log(err))
 

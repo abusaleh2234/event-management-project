@@ -1,11 +1,13 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthProvider } from "../../Provider/AuthContext";
 import GoogleLogin from "./GoogleLogin";
+import toast from "react-hot-toast";
 
 const Login = () => {
 
     const { userlogin } = useContext(AuthProvider)
+    // const [error, setError] = useState(null)
 
     const hendelLogin = (e) => {
         e.preventDefault()
@@ -15,14 +17,36 @@ const Login = () => {
         const password = form.get("password")
         console.log(email, password);
 
-        // if()
+        // const capitalLetter = /[A-Z]/;
+        const specialCharacter = /^(?=.*[!@#$%^&*])[A-Za-z0-9!@#$%^&*]+$/;
+
+        if(password.length < 6) {
+            toast.error("password at least  6 characters")
+            return;
+        }
+        else if(!specialCharacter.test(password)){
+            toast.error("password at least a special character")
+            return;
+        }
+        // else if(!capitalLetter.test(password)){
+        //     toast.error("password at least a capital letter")
+        //     return;
+        // }
+        // else{
+        //     setError(null)
+        // }
 
 
         userlogin(email, password)
             .then(res => {
                 console.log(res.user)
+                toast.success('Your Login Successfully!')
             })
-            .catch(err => console.error(err.messages))
+            .catch(err => {
+                if(err) {
+                    toast.error("Your Password and email invalid")
+                }
+            })
     }
     return (
         <div>

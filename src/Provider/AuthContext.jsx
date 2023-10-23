@@ -21,7 +21,7 @@ const AuthContext = ({children}) => {
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
             setUser(user)
-            toast.success('Your Login Successfully!')
+            
             setLooding(false)
           });
         return () => {

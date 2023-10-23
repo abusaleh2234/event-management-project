@@ -6,6 +6,7 @@ import Login from "../Pages/Login/Login";
 import ErrorComponent from "../component/ErrorComponent/ErrorComponent";
 import Register from "../Pages/Login/Register";
 import PrivetRoute from "../PrivetRoute/PrivetRoute";
+import Gallery from "../Pages/Gallery/Gallery";
 
 const router = createBrowserRouter([
     {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
             path: "/event/:id",
             element: <PrivetRoute><EventDetails></EventDetails></PrivetRoute>,
             loader: () => fetch("/events.json")
+        },
+        {
+          path: "/gallery",
+          element: <PrivetRoute><Gallery></Gallery></PrivetRoute>
         },
         {
           path: "/login",

@@ -11,7 +11,8 @@ const PrivetRoute = ({children}) => {
     console.log(looding);
 
     if(looding) {
-        return <h1 className="text-5xl text-center">looding</h1>
+        // return <h1 className="text-5xl text-center">looding</h1>
+        return <Looding></Looding>
     }
 
     if(User){

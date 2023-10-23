@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { FcGoogle } from 'react-icons/fc';
 import { AuthProvider } from '../../Provider/AuthContext';
+import toast from 'react-hot-toast';
 
 
 const GoogleLogin = () => {
@@ -11,6 +12,7 @@ const GoogleLogin = () => {
         googleLogin()
         .then(res => {
             console.log(res.user)
+            toast.success('Your Login Successfully!')
         })
         .catch(error => console.log(error))
     }
