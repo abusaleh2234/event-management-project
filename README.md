@@ -1,7 +1,7 @@
 # Event Exparts
 
 ### Live link
-- [Event Expart](http://localhost:5173/)
+- [Event Expart](https://event-management-10a43.web.app)
 
 ### feature
 - this website has some event card.
