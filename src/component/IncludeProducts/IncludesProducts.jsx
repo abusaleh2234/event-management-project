@@ -7,8 +7,8 @@ import Design_element from "../../assets/Design_element.png"
 const IncludesProducts = () => {
     return (
         <div className="container mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6  my-8 p-8 ">
-                <div className="flex justify-center items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6  my-8 p-8 ">
+                <div className="flex justify-center items-center" data-aos="fade-right">
                     <div className="space-y-8 p-8 text-center">
                         <div className="flex justify-center">
                         <img src={Design_element} alt="" />
@@ -18,7 +18,7 @@ const IncludesProducts = () => {
                         <button className="text-lg font-semibold px-4 py-2 bg-pink-600 rounded-lg text-white">Read More</button>
                     </div>
                 </div>
-                <div className="grid grid-cols-2 gap-6 p-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-8" data-aos="fade-left">
                     <div className="p-3 bg-white space-y-3">
                         <img src={chair} alt="" />
                         <h2 className="text-center text-xl font-semibold"> Design Chair</h2>

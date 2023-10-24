@@ -1,7 +1,8 @@
 import { GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import { auth } from "../firebase/firebase.config";
-import toast from "react-hot-toast";
+import PropTypes from 'prop-types';
+// import toast from "react-hot-toast";
 
 
 export const AuthProvider = createContext(null)
@@ -21,7 +22,6 @@ const AuthContext = ({children}) => {
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
             setUser(user)
-            
             setLooding(false)
           });
         return () => {
@@ -65,7 +65,7 @@ const AuthContext = ({children}) => {
         </AuthProvider.Provider>
     );
 };
-// AuthContext.propTypes = {
-//     children:PropTypes.object.isRequired
-// }
+AuthContext.propTypes = {
+    children:PropTypes.object.isRequired
+}
 export default AuthContext;

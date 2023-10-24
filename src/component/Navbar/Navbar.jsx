@@ -7,22 +7,22 @@ const Navbar = () => {
 
     const {User,logout} = useContext(AuthProvider)
 
-    console.log(User);
+    // console.log(User);
 
     const hendelLogOut = () => {
         logout()
     }
 
     const Navelinks = <>
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/gallery">Gallery</NavLink></li>
-        <li><NavLink to="/carrer">Contuct</NavLink></li>
-        <li><NavLink to="/login">Login</NavLink></li>
+        <li><NavLink to="/" className="text-lg font-semibold">Home</NavLink></li>
+        <li><NavLink to="/gallery" className="text-lg font-semibold">Gallery</NavLink></li>
+        <li><NavLink to="/ccontuct" className="text-lg font-semibold">Contuct</NavLink></li>
+        <li><NavLink to="/login" className="text-lg font-semibold">Login</NavLink></li>
 
     </>
     return (
-        <div>
-            <div className="navbar bg-base-100">
+        <div className="bg-pink-50">
+            <div className="navbar container mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -32,7 +32,7 @@ const Navbar = () => {
                             {Navelinks}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+                    <Link to="/" className="btn normal-case text-xl">Event Experts</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">

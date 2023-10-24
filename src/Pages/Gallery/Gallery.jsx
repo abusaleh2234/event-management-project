@@ -12,22 +12,24 @@ import babyshower1 from "../../assets/baby-shower-1.jpg"
 import babyshower2 from "../../assets/baby_shower_2.jpg"
 const Gallery = () => {
     return (
-        <div className="max-w-7xl mx-auto">
-            <h1 className="text-center text-6xl font-bold py-6">Gallery</h1>
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 py-10">
-                <img className="h-full w-full" src={wedding2} alt="" />
-                <img className="h-full w-full" src={wedding1} alt="" />
-                <img className="h-full w-full" src={anniversary1} alt="" />
-                <img className="h-full w-full" src={anniversary2} alt="" />
-                <img className="h-full w-full" src={birthday1} alt="" />
-                <img className="h-full w-full" src={birthday2} alt="" />
-                <img className="h-full w-full" src={engagement1} alt="" />
-                <img className="h-full w-full" src={babyshower2} alt="" />
-                <img className="h-full w-full" src={retairment2} alt="" />
-                <img className="h-full w-full" src={retairment1} alt="" />
-                <img className="h-full w-full" src={babyshower1} alt="" />
-                <img className="h-full w-full" src={engagement2} alt="" />
-                
+        <div className="bg-pink-100">
+            <div className="max-w-7xl mx-auto ">
+                <h1 className="text-center text-6xl font-bold py-6">Gallery</h1>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 py-10">
+                    <img className="h-full w-full" src={wedding2} alt="" />
+                    <img className="h-full w-full" src={wedding1} alt="" />
+                    <img className="h-full w-full" src={anniversary1} alt="" />
+                    <img className="h-full w-full" src={anniversary2} alt="" />
+                    <img className="h-full w-full" src={birthday1} alt="" />
+                    <img className="h-full w-full" src={birthday2} alt="" />
+                    <img className="h-full w-full" src={engagement1} alt="" />
+                    <img className="h-full w-full" src={babyshower2} alt="" />
+                    <img className="h-full w-full" src={retairment2} alt="" />
+                    <img className="h-full w-full" src={retairment1} alt="" />
+                    <img className="h-full w-full" src={babyshower1} alt="" />
+                    <img className="h-full w-full" src={engagement2} alt="" />
+
+                </div>
             </div>
         </div>
     );

@@ -1,5 +1,5 @@
-import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthProvider } from "../../Provider/AuthContext";
 import GoogleLogin from "./GoogleLogin";
 import toast from "react-hot-toast";
@@ -8,6 +8,8 @@ const Login = () => {
 
     const { userlogin } = useContext(AuthProvider)
     // const [error, setError] = useState(null)
+    const navigate = useNavigate()
+    const location = useLocation()
 
     const hendelLogin = (e) => {
         e.preventDefault()
@@ -28,19 +30,13 @@ const Login = () => {
             toast.error("password at least a special character")
             return;
         }
-        // else if(!capitalLetter.test(password)){
-        //     toast.error("password at least a capital letter")
-        //     return;
-        // }
-        // else{
-        //     setError(null)
-        // }
 
 
         userlogin(email, password)
             .then(res => {
                 console.log(res.user)
                 toast.success('Your Login Successfully!')
+                navigate(location?.state ? location.state : "/")
             })
             .catch(err => {
                 if(err) {
@@ -50,11 +46,10 @@ const Login = () => {
     }
     return (
         <div>
-            {/* <Navbar></Navbar> */}
             <div className="">
                 <div className=" bg-base-200">
                     <div className="hero-content flex-col lg:flex-row-reverse mx-auto">
-                        <div className="card flex-shrink-0 w-6/12 bg-base-100">
+                        <div className="card flex-shrink-0 md:w-8/12 lg:w-6/12 bg-base-100">
                             <div className=" lg:text-left py-10 mx-8 border-b">
                                 <h1 className="text-center text-4xl font-bold">Login your account</h1>
                             </div>

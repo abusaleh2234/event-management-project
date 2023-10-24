@@ -54,7 +54,7 @@ const Register = () => {
         <div className="">
             <div className=" bg-base-200">
                 <div className="hero-content flex-col lg:flex-row-reverse mx-auto">
-                    <div className="card flex-shrink-0 w-8/12 bg-base-100">
+                    <div className="card flex-shrink-0 w-10/12 lg:w-8/12 bg-base-100">
                         <div className=" lg:text-left py-10 mx-8 border-b">
                             <h1 className="text-center text-4xl font-bold">Register</h1>
                         </div>

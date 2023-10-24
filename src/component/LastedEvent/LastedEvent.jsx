@@ -4,13 +4,13 @@ import couple from "../../assets/extra-Sec_image-1.jpg"
 
 const LastedEvent = () => {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div className="mx-auto">
                 <img className="rounded-tl-xl rounded-tr-3xl rounded-br-lg rounded-bl-3xl" src={couple} alt="" />
             </div>
             <div className="">
-                <div className="space-y-8 p-8 ">
-                    <div className="">
+                <div className="space-y-8 p-8  text-right md:text-center ">
+                    <div className="flex justify-end md:justify-center">
                         <img src={quat} alt="" />
                     </div>
                     <h2 className="text-4xl font-bold">Our Last Event</h2>

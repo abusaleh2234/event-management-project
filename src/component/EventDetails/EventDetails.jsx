@@ -8,7 +8,7 @@ const EventDetails = () => {
     const events = useLoaderData()
     const intId = parseInt(id)
     const [event, setEvent] = useState({})
-    console.log(typeof intId);
+    // console.log(typeof intId);
 
     useEffect(() => {
         const singelEvent = events.find(event => event.id === intId)

@@ -7,6 +7,7 @@ import ErrorComponent from "../component/ErrorComponent/ErrorComponent";
 import Register from "../Pages/Login/Register";
 import PrivetRoute from "../PrivetRoute/PrivetRoute";
 import Gallery from "../Pages/Gallery/Gallery";
+import ContuctUs from "../Pages/ContuctUs/ContuctUs";
 
 const router = createBrowserRouter([
     {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
         {
           path: "/gallery",
           element: <PrivetRoute><Gallery></Gallery></PrivetRoute>
+        },
+        {
+          path: "/ccontuct",
+          element: <PrivetRoute><ContuctUs></ContuctUs></PrivetRoute>
         },
         {
           path: "/login",
