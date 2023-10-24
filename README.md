@@ -31,7 +31,7 @@
 
 #### Answer: C:"12"
 
-<i>this function return some, call this function pass paramiter one integar and one string, integar and string sum return string, so answer "12"</i>
+<i>this function return sum of number, call this function pass paramiter one integar and one string, integar and string sum return string, so answer "12"</i>
 
 </p>
 </details>
@@ -42,6 +42,16 @@
 #### Answer: A: ['🍕', '🍫', '🥑', '🍔']
 
 <i>diclar a array food,then diclar a object favoriteFood food[0] , console food, so answer A</i>
+
+</p>
+</details>
+
+<details><summary><b>Answer Qn 4</b></summary>
+<p>
+
+#### Answer: B: Hi there, undefined 
+
+<i>this function give one peramiter and return hi there and name, call this function pass no peramiter.and console this Hi there, undefined</i>
 
 </p>
 </details>
