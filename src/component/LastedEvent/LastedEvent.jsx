@@ -8,7 +8,7 @@ const LastedEvent = () => {
             <div className="mx-auto">
                 <img className="rounded-tl-xl rounded-tr-3xl rounded-br-lg rounded-bl-3xl" src={couple} alt="" />
             </div>
-            <div className="">
+            <div className="" >
                 <div className="space-y-8 p-8  text-right md:text-center ">
                     <div className="flex justify-end md:justify-center">
                         <img src={quat} alt="" />

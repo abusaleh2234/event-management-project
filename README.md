@@ -1,8 +1,57 @@
-# React + Vite
+# Event Exparts
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Live link
+- [Event Expart](http://localhost:5173/)
 
-Currently, two official plugins are available:
+### feature
+- this website has some event card.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Event card has a details button you click details see event details.
+
+- Register with email and password login.
+
+- Google login .
+
+- Without home page other page private route.
+
+- if you login complete show tosts. 
+
+<details><summary><b>Answer Qn 1</b></summary>
+<p>
+
+#### Answer: A:{}
+
+<i>diclar a variable greeting, then set value emtye object.so answer {}</i>
+
+</p>
+</details>
+
+<details><summary><b>Answer Qn 2</b></summary>
+<p>
+
+#### Answer: C:"12"
+
+<i>this function return some, call this function pass paramiter one integar and one string, integar and string sum return string, so answer "12"</i>
+
+</p>
+</details>
+
+<details><summary><b>Answer Qn 3</b></summary>
+<p>
+
+#### Answer: A: ['🍕', '🍫', '🥑', '🍔']
+
+<i>diclar a array food,then diclar a object favoriteFood food[0] , console food, so answer A</i>
+
+</p>
+</details>
+
+<details><summary><b>Answer Qn 5</b></summary>
+<p>
+
+#### Answer: C: 3
+
+<i>diclar a var count and one array nums, if loop get num then count increment 1. so count console 3  </i>
+
+</p>
+</details>
